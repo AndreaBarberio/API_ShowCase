@@ -1,140 +1,97 @@
-[![npm version](https://badge.fury.io/js/cra-template-typescript-redux.svg)](https://badge.fury.io/js/cra-template-typescript-redux)
-[![Action status](https://github.com/alexandr-g/cra-template-typescript-redux/workflows/CI/badge.svg?branch=master)](https://github.com/alexandr-g/cra-template-typescript-redux/actions)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+# APIShowcase 🚀
+
+![npm version](https://badge.fury.io/js/cra-template-typescript-redux.svg)
+![Action status](https://github.com/alexandr-g/cra-template-typescript-redux/workflows/CI/badge.svg?branch=master)
+![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)
 ![npm downloads](https://img.shields.io/npm/dm/cra-template-typescript-redux)
 
-
-# APIShowcase
 ## Description 📝
 
-This project is a React APP in a TypeScript environment. The app's purpose is to showcase how to handle React component rendering and API mocked calls, using Redux 🔄 to manage a global store where actions are saved. The app demonstrates delayed rendering of components to simulate API calls and provides valuable insights into how Redux facilitates state management.
+Welcome to APIShowcase, an amazing React App built with TypeScript. This project aims to demonstrate the handling of React component rendering and API mocked calls while utilizing Redux 🔄 for efficient state management. 
+
+Get ready to experience delayed component rendering that simulates API calls and gain valuable insights into the power of Redux for managing actions in a global store.
 
 ## Getting Started 🚀
 
-These instructions will help you set up and run the project on your local machine.
+These simple instructions will help you set up and run the project on your local machine in no time! 🏃‍♂️
 
 ### Prerequisites 🛠️
 
-- Node.js and npm/yarn installed on your machine. 🖥️
+To get started, make sure you have the following installed on your machine:
 
-### Installing ⚙️
+- Node.js and npm/yarn 🖥️
 
-1. Clone this repository. 👯‍♂️
+### Installation ⚙️
+
+1. Clone this repository to your local machine. 👯‍♂️
 2. Navigate to the project directory.
 3. Install the required dependencies using npm or yarn: 📦
 
+```bash
+# If using npm
+npm install
+
+# If using yarn
+yarn install
+```
+
+### Running the App 🏃‍♂️
+
+Now that you have everything set up, it's time to run the app and experience the magic! ✨
+
+```bash
 # If using npm
 npm start
 
 # If using yarn
 yarn start
+```
+
+The app will start and will be accessible at [http://localhost:3000](http://localhost:3000) in your favorite web browser.
 
 ## Built With 🔧
 
+APIShowcase is built with the following awesome technologies:
+
 - React (with TypeScript) ⚛️
 - Redux (for state management) 🗃️
-- CSS (for styling) 🎨
+- Pure CSS (for styling) 🎨
 
-# If you want to give a try
+## Introduction to APIShowcase 📜
 
-### A quick start Redux + TypeScript Create React App template
+Welcome to APIShowcase, an incredible React App designed to demonstrate the power of Redux for efficient state management and showcase the handling of component rendering and API mocked calls. Let's dive in and explore the exciting features of this project! 🎉
 
-An opinionated quick start [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with configured **Redux**, **TypeScript**, **React Router**, **React Testing Library** and custom **ESlint** configuration.
+### Loading State at Start ⏳
 
-Original Create React App README available [here](./README_CRA.md)
+At the beginning of your journey with APIShowcase, you will experience a loading state as the app prepares to showcase its magic.
 
-## Usage
+### Simulated API Calls 📡
 
-```bash
-npx create-react-app your-project-name --template typescript-redux
-```
+Our app will perform API calls, returning mock data, simulating a real API experience. The calls are set on a timer to provide a delayed response, mimicking actual network interactions:
 
-Or
+1. 0ms: calls API for mock 1 -> 500ms: response
+2. 500ms: calls API for mock 2 -> 1000ms: response
+3. 1000ms: calls API for mock 3 -> 1500ms: response
+4. 1500ms: calls API for mock 4 -> 2000ms: response
 
-```bash
-yarn create react-app your-project-name --template typescript-redux
-```
+### Component Rendering 🖼️
 
-`npx` command installs the most recent stable version of CRA from npm.
+After each API response, the relevant component will get rendered on the page. Keep an eye on those boundaries, as each component is styled uniquely with different backgrounds, borders, margins, and more!
 
-`--template` parameter points to this template, note that `cra-template-` prefix is omitted.
+### Redux Store Insights 🔄
 
-## Motivation
+At the top of the page, you'll find another exciting component connected to the Redux store. It provides valuable insights, displaying the number of API calls made and the name of the last rendered component.
 
-You know the pain. You start a new project from scratch and need to configure it again and again. It needs routing, ok you setup Router, then you need Redux - ok, oh 😩 Redux boilerplate is taking so much time to type. Wait... what if you could have all the tools you want just from the beginning? I want to focus on building amazing projects and not spending hours configuring. That's why I've created this template. It's here for you to use.
+## Extra Efforts 💪
 
-## Available Scripts
+In this project, we have gone the extra mile to make it even more impressive:
 
-In the project directory, you can run:
+- Avoided the use of media queries for responsive design.
+- Utilized TypeScript for enhanced type safety and better development experience.
+- Managed the render of components in a single wrapper component for a cleaner code structure.
 
-- `yarn start` - runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+We hope you enjoy exploring APIShowcase and discover the true potential of Redux and React in creating powerful, efficient, and responsive applications! 🚀
 
-- `yarn test` - launches the test runner in the interactive watch mode.
+## Thank You! 🙏
 
-- `yarn build` - builds the app for production to the `build` folder.
-
-- `yarn eject` - exposes content of `react-script` package
-
-- `yarn lint` - lints project files according to eslint rules, see below. Typical use case: continuous integration environments, Travis, CircleCI, etc.
-
-- `yarn fix` - same as `yarn lint`, but also fixes errors, when possible. Typical use case: local development environment, git hooks.
-
-Due to CRA template limitations (we can change only `scripts` and `dependencies` inside generated `package.json`) all configuration is done by adding config files where possible. Also no `devDependencies` for now, sorry.
-
-## Redux configuration
-
-The template provides basic Redux configuration with [feature based](https://redux.js.org/style-guide/style-guide/#structure-files-as-feature-folders-or-ducks) folder structure. You can use [Redux devtools browser extension](http://extension.remotedev.io/). Sample feature included in `src/features` folder, note technology agnostic `features` folder name. Based on Redux maintainers recommendation.
-
-## Testing
-
-Testing is done with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
-
-## [Prettier](https://prettier.io/)
-
-I added `prettier` to force consistent formatting. Don't like trailing semicolons? Feel free to [tweak prettier rules](https://prettier.io/docs/en/configuration.html) inside `.prettierrc` file to match your code style.
-
-## Styles/CSS/Styling
-
-Just for the styling purpose of the example app, I used [Materialize](https://materializecss.com/). The template is shipped with the Materialize by default. I want to make sure that this template is style agnostic so you can plugin any CSS-in-JS or whatever library/framework you want to use for styles on your own.
-
-### How to remove materialize
-
-In order to remove Materialize [MaterializeCSS](https://materializecss.com/) navigate to the `public` folder, open `index.html` and remove following CDN link in the `<head>` lines 18-22:
-
-```html
-<!--Import materialize.css-->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-/>
-```
-
-Remove or adjust all the `classNames` related to the Materialize and feel free to use your own styling.
-
-## Eslint configurations
-
-The template extends CRA ESLint rules with a custom set, tailored for the reasonable and clean development process.
-
-Eslint rules are commented for your convenience feel free to tweak or remove them inside `.eslintrc`. No judgment.
-
-## Testing template locally
-
-To test the output of your template locally run
-
-```bash
-npx create-react-app my-app --template file:./cra-template-typescript-redux
-```
-
-## How to create custom Create React App (CRA) templates
-
-I created a step by step guide on how to create your own templates.
-
-[View on Medium](https://medium.com/@alexgrischuk/how-to-create-custom-create-react-app-cra-templates-73a5196edeb)
-
-[View on personal blog](https://grischuk.de/posts/how-to-create-custom-create-react-app-templates)
-
-[View on dev.to](https://dev.to/alexandrg/how-to-create-custom-create-react-app-cra-templates-3nca)
-
-## Thank you
-
-I hope this template will be helpful for you and you will love using it 🖤
+Thank you for using APIShowcase! We hope this template proves to be a valuable asset in your React projects. If you have any feedback or questions, feel free to share them with us. Happy coding! 🖤
