@@ -3,7 +3,41 @@
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 ![npm downloads](https://img.shields.io/npm/dm/cra-template-typescript-redux)
 
-# A quick start Redux + TypeScript Create React App template
+
+# APIShowcase
+## Description 📝
+
+This project is a React APP in a TypeScript environment. The app's purpose is to showcase how to handle React component rendering and API mocked calls, using Redux 🔄 to manage a global store where actions are saved. The app demonstrates delayed rendering of components to simulate API calls and provides valuable insights into how Redux facilitates state management.
+
+## Getting Started 🚀
+
+These instructions will help you set up and run the project on your local machine.
+
+### Prerequisites 🛠️
+
+- Node.js and npm/yarn installed on your machine. 🖥️
+
+### Installing ⚙️
+
+1. Clone this repository. 👯‍♂️
+2. Navigate to the project directory.
+3. Install the required dependencies using npm or yarn: 📦
+
+# If using npm
+npm start
+
+# If using yarn
+yarn start
+
+## Built With 🔧
+
+- React (with TypeScript) ⚛️
+- Redux (for state management) 🗃️
+- CSS (for styling) 🎨
+
+# If you want to give a try
+
+### A quick start Redux + TypeScript Create React App template
 
 An opinionated quick start [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with configured **Redux**, **TypeScript**, **React Router**, **React Testing Library** and custom **ESlint** configuration.
 
