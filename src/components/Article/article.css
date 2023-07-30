@@ -1,0 +1,36 @@
+/* article.css */
+
+/* Block styles */
+.article__wrapper {
+	border: 1px solid #ccc;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	/* Impostiamo il display flex per gestire il layout */
+	display: flex;
+	flex-direction: column;
+	align-items: stretch; /* Facciamo sì che gli elementi interni si estendano per tutta la larghezza */
+}
+
+.article__title {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.article__content {
+	margin-top: 10px;
+}
+
+/* Element styles */
+.article__content div {
+	margin-bottom: 8px;
+	color: #555;
+}
+
+/* Modifier styles (optional, add styles based on certain conditions) */
+.article__content div:last-child {
+	margin-bottom: 0;
+}

@@ -1,0 +1,30 @@
+/* Home.css */
+.home {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px;
+}
+
+.home__count,
+.home__last-title {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.home__components-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.home__component {
+	flex: 1 1 50%;
+	display: flex;
+}
+.home__component--header {
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+}
