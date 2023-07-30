@@ -14,7 +14,7 @@ export const Home: React.FC = () => {
 	const [data, setData] = useState<any[]>([]);
 	const [title, setTitle] = useState<string>('');
 	const count = useSelector((state: RootState) => state.counter.value);
-	const lastTitle = useSelector((state: RootState) => state.counter.lastTitle); // Ottieni l'ultimo titolo da Redux
+	const lastTitle = useSelector((state: RootState) => state.counter.lastTitle); // Get the last Title from redux
 	interface MyDataType {
 		title: string;
 	}
@@ -63,9 +63,9 @@ export const Home: React.FC = () => {
 
 	return (
 		<div className="home">
-			<p className="home__count">Il conto delle chiamate è: {count}</p>
+			<p className="home__count">Api Calls: {count}</p>
 			{lastTitle && (
-				<p className="home__last-title">Ultimo titolo ricevuto: {lastTitle}</p>
+				<p className="home__last-title">The last component title is: {lastTitle}</p>
 			)}
 			{isLoading && <Spinner />}
 

@@ -1,7 +1,7 @@
 // import React and other necessary modules
 import React from 'react';
 import { IDescriptive } from '../../utilities/types';
-import './article.css'; // Import the CSS file
+import './article.css'; 
 
 const Article: React.FC<IDescriptive> = ({ title, content }) => {
 	return (
