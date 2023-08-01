@@ -7,7 +7,7 @@
 
 ## Description 📝
 
-Welcome to APIShowcase, an amazing React App built with TypeScript. This project aims to demonstrate the handling of React component rendering and API mocked calls while utilizing Redux 🔄 for efficient state management. 
+Welcome to APIShowcase, an amazing React App built with TypeScript I have been challenged for. This project aims to demonstrate the handling of React component rendering and API mocked calls while utilizing Redux 🔄 for efficient state management. 
 
 Get ready to experience delayed component rendering that simulates API calls and gain valuable insights into the power of Redux for managing actions in a global store.
 
